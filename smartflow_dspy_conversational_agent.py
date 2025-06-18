@@ -87,8 +87,7 @@ def configure_openai(
         try:
             os.environ["OPENAI_API_KEY"] = api_key
 
-            # Import and configure directly
-            from dspy.retrieve.openai_rm import OpenAIRM
+            # Configure directly
 
             # Simple configuration - let DSPy handle the rest
             dspy.settings.configure()
